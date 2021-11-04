@@ -1,0 +1,4 @@
+suites:
+  application_primitives:
+    namespace: CptBurke\Application
+    psr4_prefix: CptBurke\Application
