@@ -18,5 +18,8 @@
     },
     "require-dev": {
         "phpspec/phpspec": "^7.1"
+    },
+    "suggest": {
+        "lambdish/phunctional": "useful library for functional programming"
     }
 }
