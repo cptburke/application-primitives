@@ -3,6 +3,12 @@
     "description": "useful application building primitives",
     "type": "library",
     "license": "mit",
+    "authors": [
+        {
+            "name": "cptBurke",
+            "email": "p.burmann@gmx.de"
+        }
+    ],
     "require": {
         "php": ">=8.0"
     },
