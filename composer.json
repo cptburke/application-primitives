@@ -26,6 +26,7 @@
         "phpspec/phpspec": "^7.1"
     },
     "suggest": {
-        "lambdish/phunctional": "useful library for functional programming"
+        "lambdish/phunctional": "useful library for functional programming",
+        "cptburke/symfony-messenger-application": "implementation of these primitives"
     }
 }
