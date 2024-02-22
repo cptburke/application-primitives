@@ -5,7 +5,7 @@ Collection of useful buildings blocks for applications / services (CQRS, DDD etc
 `composer require cptburke/application-primitives`
 
 # Usage
-General ideas for usages, see TODO for implentation.
+General ideas for usages, see TODO for implementation.
 
 ## Domain
 ```php

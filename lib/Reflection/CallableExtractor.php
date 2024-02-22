@@ -7,6 +7,7 @@ namespace CptBurke\Application\Reflection;
 use Exception;
 use ReflectionException;
 use CptBurke\Application\Event\ApplicationEventSubscriber;
+use CptBurke\Application\Domain\DomainEventSubscriber;
 use ReflectionMethod;
 
 
@@ -49,8 +50,8 @@ class CallableExtractor
     {
         $map = [];
         foreach ($subscribers as $subscriber) {
-            if ( ! $subscriber instanceof ApplicationEventSubscriber) {
-                throw new HandlerException('only instances of ApplicationEventSubscriber can subscribe');
+            if (!$subscriber instanceof ApplicationEventSubscriber || !$subscriber instanceof DomainEventSubscriber) {
+                throw new HandlerException('only instances of ApplicationEventSubscriber or DomainEventSubscriber can subscribe');
             }
             $events = $subscriber::subscribedTo();
             foreach ($events as $event) {
