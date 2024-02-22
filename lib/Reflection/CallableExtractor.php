@@ -50,7 +50,7 @@ class CallableExtractor
     {
         $map = [];
         foreach ($subscribers as $subscriber) {
-            if (!$subscriber instanceof ApplicationEventSubscriber || !$subscriber instanceof DomainEventSubscriber) {
+            if (!$subscriber instanceof ApplicationEventSubscriber && !$subscriber instanceof DomainEventSubscriber) {
                 throw new HandlerException('only instances of ApplicationEventSubscriber or DomainEventSubscriber can subscribe');
             }
             $events = $subscriber::subscribedTo();
